@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+## c语言学习途径
 
-You can use the [editor on GitHub](https://github.com/Cyoking/Cyoking.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+快速学习C语言途径，让你少走弯路
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#1.标准C语言能干什么？
+坦白讲，在今天软件已经发展了半个多世纪，单纯的C语言什么都干不了。标准C语言库只提供了一些通用的逻辑运算方法以及字符串处理，当然字符串在C语言看来也是一种操作内存的方法，所以单纯的C什么都做不了，不论是游戏客户端，服务器以及其他插件标准C语言要配合相应的系统C调用和其他语言共同完成一个完整的软件。所以C只是一个入门，要想吃软件这碗饭还有很长的路要走
 
-### Markdown
+#2.从学会C语言到能写软件还要做什么？
+I.个人认为第一步是学习数据结构和算法。推荐一本书：《数据结构(C语言版) 》有能力的同学应该从这本书开始就要慢慢开始英文原版阅读，当然在这里我给大家说的还是中文版的名字。数据结构和算法两者密不可分，数据结构体现了数据在内存和硬盘中存储的形态，如何运用这些形态进行最优化操作，就要靠相应的算法来实现了II.了解一点汇编知识。推荐一本书《汇编语言》作者：王爽可以说这本书是中国代码人的骄傲，目前为止我还未看到过像王老师这样文笔流畅，深入浅出的把一个生涩的汇编语言描述的如此清晰的大师。王老师用中国人的思维方式，语言习惯，学习思路为我们介绍了汇编，这一点上惊为天人！！！III.还是介绍一本书，不过这本书算是课外读物吧《编码——隐匿在计算机软硬件背后的语言》。看这本书时可以和前面几个步骤平行进行。这本书并不教你软件编程，却用宏观的角度概括了从数模电到C语言层次计算机的整体思路。非常棒
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#3.用什么系统学C？linux！
+毫无疑问，天下武功出少林，所有操作系统出UNIX。而linux则是UNIX集大成者。linux版本众多，推荐Ubuntu，其界面友好，又不失UNIX本真。当然有钱的朋友用个苹果本本在Mac上搞也是一样牛逼的，但苹果这个东西学生党还不是每个人都消费的起的，所以没有条件的同学搞个Ubuntu玩玩就够了。现在用wubi这个软件，可以在window上直接格出一个文件夹作为Ubuntu的系统路径，跟安装一个应用软件一样简单，所以大家为何不试试呢。在Ubuntu上我推荐大家跟着一本书来走《LinuxC一站式编程》宋劲彬老师所写。现在已近绝版，但网上有开源免费书籍可以下到。宋老师在国内时一直是一个较为有名的软件培训学校老师，这本书也是从零基础直接到LinuxC程序员的一条捷径，但由于是职业培训学校教材，就在基本功方面砍去了一些东西，我希望大家不要把这些基本的东西丢掉，否则到了三四十岁可能你就没饭吃了
 
-```markdown
-Syntax highlighted code block
+#4.掌握几种语言就可以算是个合格的程序员了呢？
+这个问题仁者见仁智者见智。从我个人的角度讲，我现在玩过的语言全加起来一共有这么几种C,C++,JAVA,Javascript,VB,Lua,SQL不要被他们吓到，也不要膜拜哥，吼吼吼（自恋了）其实他们的本质叫做过程式语言，只不过有的逼格高些叫做面向对象有的叫做模块化语言，有些是脚本语言。可以说学会C以后，其他语言从开始看到上手干活我没有超过一星期的。当然学C的时候要配合上面我说的其他的这些内容一起学习，所以也不能单纯的讲之前只是学C语言。每一种语言其实只是和计算机对话的一种接口，通过学习一种语言我们要更多的是了解计算机的整体思考模式。C语言普遍作为第一个要学的语言可以说是易学难精，因为他的主要职责就是不断地和操作系统乃至硬件直接打交道（较为直接吧，从软件角度来看就是直接接触硬件了，但在硬件角度上看中间还隔着若干层呢，我硬件功力很薄弱在这里就不能跟大家胡喷了）
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Cyoking/Cyoking.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#5.软件编写的进阶如果你想当一个作家，是不是首先要读很多书之后再写书呢？
+正所谓厚积薄发同样的，写代码也一样，学会一门语言也就相当于你会写字了，但从会写字到会写文章中间的差距有多大，各位应该心里也就有数了所谓进阶无非是大量的看优秀的开源代码，github绝对是需要膜拜的，很多优秀的开源社区源码在上面看都看不完，大家要好好利用这里的资源。关于看源码还有很多方法，技巧，今天有点事要出去了，晚上回来或者明天，如果大家愿意看的话，再跟大家分享。以上就是我一个小小码农的一点点微末心得，引用一句我敬佩的云风老师的话：“我现在是中国并不成熟的游戏制作行业中的一员，游戏给了我太多，我告诉自己需要做一点事情，分享知识和经验是我的义务，别无它”
