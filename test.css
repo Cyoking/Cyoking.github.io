@@ -97,7 +97,8 @@ body{
 .part1{
 	background-color:aliceblue;
 	width: 100%;
-	height: 9%;
+	height: auto;
+	clear: both;
 }
 .index_p{
 	padding-top: 10px;
@@ -114,7 +115,8 @@ body{
 	margin-left: 25px;
 	padding: 4px 10px;
 	width: 20%;
-	height: 50%;
+	height: 100px;
+	margin-bottom: 20px;
 }
 .part1_a{
 	display: block;
@@ -148,6 +150,7 @@ body{
 	clear: both;
 	width: 100%;
 	height: auto;
+	margin-bottom: 20px;
 	
 }
 .tag{
