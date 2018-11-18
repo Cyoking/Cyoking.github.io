@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	*{
+		margin:0;
+		padding: 0;
+	}
+		.wrap{
+			width: 400px;
+			height: 200px;
+			margin-left: 150px auto;
+			text-align: center;
+		}
+		.wrap > h3{
+			padding-bottom: 80px;
+			color: #333;
+			font-size: 30px;
+    		margin-top: 100px;
+
+		}
+		.wrap > button{
+			float: left;
+			width: 100px;
+			height: 40px;
+			border: 0;
+			background-color: red;
+			color: #fff;
+			font-weight: 700;
+			font-size: 20px;
+			border-radius: 5px;
+		}
+		.wrap > .no{
+			position: absolute;
+			background-color: #f00;
+		}
+		.wrap > .yes{
+			margin-left: 100px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<h3>嫁给我好吗？</h3>
+		<button class="yes" onclick="closeWin()">我愿意</button>
+		<button id="no" class="no" onmouseover="move()">想多了</button>
+	</div>
+</body>
+<script type="text/javascript">
+	var	button = document.getElementById("no"),
+		// 获取不好按钮的dom
+		data = [10,20,30,40,50,60,70,80,90,100,110];
+		// 存放随机改变像素值
+	var flag = 1;
+	// 存放随机数
+	function move(){//移动事件
+		let height = button.offsetHeight,
+			width = button.offsetWidth;
+			// 获取当前按钮的位置
+		while(1){
+			let inFlag = Math.floor(Math.random()*10)
+			if (flag !== inFlag) {
+				flag = inFlag ;
+					break;
+			}
+		}
+		// 生成随机数，并确保与上一次随机数不同
+		
+		let heiPre = -1 ,widPre = -1;
+
+		var e = event || window.event;
+        var scrollX = document.documentElement.scrollLeft || document.body.scrollLeft;
+        var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
+        // 获取鼠标的坐标
+
+        // 计算偏移的位移像素值
+        if(flag%2 === 0){//生成的随机数是偶数
+        	if(height === height + data[flag]*4 && width ===  width + data[flag]*4 ){//坐标与上次相同
+        		if(Math.round(Math.random())){//随机数1
+					height = button.style.top = height + data[flag]*4 + 200 + 'px';
+		       		width = button.style.left = width + data[flag]*4 + 'px';
+        		}else{//坐标与上次不同
+					height = button.style.top = height + data[flag]*4 + 'px';
+		       		width = button.style.left = width + data[flag]*4  + 200 + 'px';
+        		}
+        	}else{//随机数0
+        		height = button.style.top = height + data[flag]*4 + 'px';
+	       		width = button.style.left = width + data[flag]*4 + 'px';
+        	}
+	       
+	    }else{//生成的随机数是奇数
+        	if (height - data[flag]*4 <= 0) {
+				height = button.style.top = Math.floor(Math.random()*100) + 'px';
+        	}else{
+        		height = button.style.top = height - data[flag]*4 + 'px';
+        	}
+	    	
+	        width = button.style.left = width + data[flag]*6 + 'px';
+	    }
+	} 
+	// 好按钮事件
+	function closeWin(){
+    	alert("爱你么么哒！");
+    	window.close();//关闭窗口
+    }
+</script>
+</html>
